@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\IPC">
+      <UniqueIdentifier>{68f6a1da-06e0-4508-bead-a065b4a5b6bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_local.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="iocp_wrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="task.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="count_down_latch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="perf_time.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="work_simultaneously.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="serial_task.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="block_task_queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="asyn_task.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="condition_variable_ext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_da.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="thread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mutex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="unique_lock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="condition_variable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="condition_variable_xp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="event_observer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ensure_clean_up.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="share_memory.h">
+      <Filter>头文件\IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="named_mutex.h">
+      <Filter>头文件\IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="defer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="string.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="json_struct_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_pool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="quick_start_cancel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_message_loop.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="message_wnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="iocp_wrapper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="thread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="condition_variable_xp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="message_wnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
