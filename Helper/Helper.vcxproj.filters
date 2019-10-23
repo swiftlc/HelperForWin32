@@ -20,9 +20,6 @@
     <ClInclude Include="thread_local.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="iocp_wrapper.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="task.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -104,11 +101,11 @@
     <ClInclude Include="message_wnd.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="iocp_server.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="iocp_wrapper.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="thread.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -116,6 +113,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="message_wnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="iocp_server.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -4,6 +4,7 @@
 #include "event_observer.h"
 #include "defer.h"
 #include <Windows.h>
+#include <iostream>
 
 HelperLibBegin
 

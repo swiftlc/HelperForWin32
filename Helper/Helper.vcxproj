@@ -22,7 +22,7 @@
     <ClInclude Include="ensure_clean_up.h" />
     <ClInclude Include="event_observer.h" />
     <ClInclude Include="filesystem.h" />
-    <ClInclude Include="iocp_wrapper.h" />
+    <ClInclude Include="iocp_server.h" />
     <ClInclude Include="json_struct_helper.h" />
     <ClInclude Include="message_wnd.h" />
     <ClInclude Include="mutex.h" />
@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="condition_variable_xp.cpp" />
-    <ClCompile Include="iocp_wrapper.cpp" />
+    <ClCompile Include="iocp_server.cpp" />
     <ClCompile Include="message_wnd.cpp" />
     <ClCompile Include="thread.cpp" />
   </ItemGroup>
@@ -53,19 +53,19 @@
     <ProjectGuid>{e77fc776-9fba-4950-b88b-e2ce304dff9b}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Helper</RootNamespace>
-    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141_xp</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141_xp</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
