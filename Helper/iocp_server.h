@@ -16,6 +16,7 @@ class IocpServer
 {
   using _Task = std::function<void()>;
 public:
+  virtual ~IocpServer();
 
   bool Init(WORD asyn_task_count = 0, WORD event_handler_count = 1);
 

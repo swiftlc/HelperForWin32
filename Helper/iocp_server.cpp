@@ -3,6 +3,14 @@
 
 HelperLibBegin
 
+IocpServer::~IocpServer()
+{
+  if (completion_port != INVALID_HANDLE_VALUE) {
+    ::CloseHandle(completion_port);
+    completion_port = INVALID_HANDLE_VALUE;
+  }
+}
+
 bool IocpServer::Init(WORD asyn_task_count /*= 0*/, WORD event_handler_count /*= 1*/)
 {
   completion_port = ::CreateIoCompletionPort(
@@ -26,9 +34,10 @@ void IocpServer::Quit()
     latch_->Wait();
 
     //线程资源清理
-    std::for_each(event_handlers_.begin(), event_handlers_.end(), 
+    std::for_each(event_handlers_.begin(), event_handlers_.end(),
       [](auto& t) {if (t.joinable())t.join(); });
     event_handlers_.clear();
+    ::CloseHandle(completion_port);
     completion_port = INVALID_HANDLE_VALUE;
   }
 }
@@ -44,6 +53,7 @@ void helper_lib::IocpServer::QuitA(DWORD milli_second)
         [](auto& t) {if (t.joinable())t.join(); });
     }
     event_handlers_.clear();
+    ::CloseHandle(completion_port);
     completion_port = INVALID_HANDLE_VALUE;
   }
 }
